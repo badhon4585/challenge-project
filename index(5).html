@@ -11,7 +11,51 @@
 
     <style>
         body {
-            background-color: rgb(163, 161, 152);
+            background-color: rgb(233, 233, 233);
+        }
+
+        .nabar-container {
+            display: flex;
+
+        }
+
+        .nabar-container ul {
+            margin-left: 100px;
+            display: inline-flex;
+            padding: 7px;
+
+        }
+
+        .nabar-container ul li {
+            list-style: none;
+            display: inline-block;
+
+
+        }
+
+        .nabar-container ul a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nabar-container ul li::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background: rgb(0, 0, 0);
+            display: block;
+            margin: auto;
+            transition: .3s;
+
+        }
+
+        .nabar-container ul li:hover::after {
+            width: 100%;
+
+        }
+
+        .button {
+            font-size: 20px;
         }
 
         .container {
@@ -50,6 +94,52 @@
 </head>
 
 <body>
+    <!-- this is  navbar section  -->
+    <div class="section  ">
+
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light nabar-container ">
+                <b> <a class="navbar-brand text-primary  " href="#">BADHON CHAKARBOTI</a></b>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-3 ">
+                            <b> <a class="nav-link text-danger" href="#">Home <span
+                                        class="sr-only">(current)</span></a></b>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-warning " href="index(about us).html">About Us</a></b>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-success" href="#">Porject</a></b>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-primary " href="#">contact</a></b>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-primary" target="_blank" href="index(5).html">Calculator</a></b>
+                        </li>
+
+                        <a class="btn btn-primary ml-3 mt-2 button" href="#" role="button">Email us</a>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+
+    </div>
+
     <div class="container">
         <h1>calculator</h1>
 
