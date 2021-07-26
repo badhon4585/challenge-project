@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <title>About us</title>
+    <!--like fontawesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!--link css-->
+
+    <link type="text/css" rel="stylesheet" href="Responsive.css" />
+    <title>Page not found &#8211; ITdyno</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        .cloer {
+            background-color: #e0dcdc;
+        }
+
+        .nabar-container {
+            display: flex;
+
+        }
+
+        .nabar-container ul {
+            margin-left: 100px;
+            display: inline-flex;
+            padding: 7px;
+
+        }
+
+        .nabar-container ul li {
+            list-style: none;
+            display: inline-block;
+
+
+        }
+
+        .nabar-container ul a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nabar-container ul li::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background: rgb(0, 0, 0);
+            display: block;
+            margin: auto;
+            transition: .3s;
+
+        }
+
+        .nabar-container ul li:hover::after {
+            width: 100%;
+
+        }
+
+        .card-top {
+            margin-top: 20px;
+            background-color: darkcyan;
+        }
+
+        .container h3 {
+            font-size: 40px;
+        }
+
+        .profile-area {
+            background-color: rgba(228, 228, 255, 0.76);
+            padding: 80px 0;
+        }
+
+        .card {
+            box-shadow: black;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .img1 img {
+            height: 200px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            width: 500px;
+        }
+
+        .img2 img {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 7px solid #fff;
+            margin-top: -80px;
+        }
+
+        .card:hover .img2 img {
+            border-color: darkblue;
+            transition: .7s;
+
+        }
+
+        .mani-text {
+            padding: 38px 0;
+            text-align: center;
+        }
+
+        .mani-text h2 {
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 20px;
+            margin: 0 0 20px;
+
+        }
+
+        .mani-text p {
+            font-size: 16px;
+            padding: 0 35px;
+        }
+
+        .socials {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .socials i {
+            font-size: 40px;
+
+            padding: 0 10px;
+        }
+
+        .top {
+            background-color: #092395;
+            margin-top: 10px;
+            padding: 90px;
+        }
+
+        .container h1 {
+            font-size: 70px;
+            font-weight: bolder;
+        }
+
+        .foter {
+            background-color: #20212B;
+        }
+
+        .foter-text-d {
+            padding-top: 90px;
+        }
+
+        .menu ul {
+            list-style: none;
+
+            padding: 20px;
+            padding-left: 30px;
+            font-size: 15px;
+        }
+
+        .menu ul li a {
+
+            color: #ffffff;
+        }
+
+        .menu ul li a:hover {
+
+            color: rgba(108, 108, 223, 0.972);
+        }
+
+        .fon {
+            font-size: 40px;
+        }
+
+        .sav1 {
+            margin-left: 50px;
+        }
+
+        .sav {
+            margin-left: 30px;
+        }
+
+        .circle {
+
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #c8c6c6;
+            font-size: 25px;
+            text-align: center;
+            color: #36aeda;
+            margin-bottom: 1 20px;
+        }
+
+        .circle:hover {
+            background-color: #20212B;
+        }
+
+        .cloer2 {
+            color: rgb(89, 38, 185);
+        }
+    </style>
+</head>
+
+<body class="cloer">
+    <!-- this is  navbar section  -->
+    <div class="section  ">
+
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light nabar-container ">
+                <b> <a class="navbar-brand text-primary  " href="#">BADHON CHAKARBOTI</a></b>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-3 ">
+                            <b> <a class="nav-link text-danger" href="index.html">Home <span
+                                        class="sr-only">(current)</span></a></b>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-warning " href="#">About Us</a></b>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-success" href="#">Porject</a></b>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-primary " href="#">contact</a></b>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <b> <a class="nav-link text-primary" target="_blank" href="index(5).html">Calculator</a></b>
+                        </li>
+
+                        <a class="btn btn-primary ml-3 mt-2 button" href="#" role="button">Email us</a>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+
+    </div>
+    <!-- this is top section  -->
+
+    <div class="top">
+        <div class="elementor-shape elementor-shape-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 10" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M350,10L340,0h20L350,10z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h1 class="text-white text-center">ABOUT US</h1>
+        </div>
+    </div>
+
+    <!-- this is card section  -->
+    <div class="card-top">
+        <div class="container">
+            <h3 class="text-center  font-weight-bolder py-4">OUR TEAM</h3>
+        </div>
+    </div>
+    <div class="profile-area">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4  mb-5">
+                    <div class="card">
+
+                        <div class="img1"> <img src="img1/sky-690293__340.jpg" alt=""></div>
+                        <div class="img2"> <img src="img1/nnnbvl.jpg" alt=""></div>
+                        <div class="mani-text">
+                            <h2>Badhon Chakarboti</h2>
+                            <p>Lorem amet dolore stet takimata dolore tempor diam magna rebum lorem, voluptua elitr kasd
+                                sit sed lorem, stet et sit.</p>
+                        </div>
+                        <div class="socials">
+
+                            <a href="https://www.facebook.com/hulk.badhon/" target="_blank"> <i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="" class="text-danger"> <i class="fab fa-instagram-square "></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4  mb-5">
+                    <div class="card">
+                        <div class="img1"> <img src="img1/sky-690293__340.jpg" alt=""></div>
+                        <div class="img2"> <img src="img1/nnnbvl.jpg" alt=""></div>
+                        <div class="mani-text">
+                            <h2>Badhon Chakarboti</h2>
+                            <p>Lorem amet dolore stet takimata dolore tempor diam magna rebum lorem, voluptua elitr kasd
+                                sit sed lorem, stet et sit.</p>
+                        </div>
+                        <div class="socials">
+
+                            <a href=""> <i class="fab fa-facebook"></i></a>
+                            <a href="" class="text-danger"> <i class="fab fa-instagram-square "></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="img1"> <img src="img1/sky-690293__340.jpg" alt=""></div>
+                        <div class="img2"> <img src="img1/nnnbvl.jpg" alt=""></div>
+                        <div class="mani-text">
+                            <h2>Badhon Chakarboti</h2>
+                            <p>Lorem amet dolore stet takimata dolore tempor diam magna rebum lorem, voluptua elitr kasd
+                                sit sed lorem, stet et sit.</p>
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.facebook.com/hulk.badhon/" target="_blank"> <i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="" class="text-danger"> <i class="fab fa-instagram-square "></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- this is about section  -->
+    <div class="about-container" id="ABOUT">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 text-dark py-5 text-justify">
+
+                    <h3>Badhon Chakarboti</h3>
+                    <p>student,web developer</p>
+
+
+                    <p>Labore rebum et nonumy stet sanctus accusam dolor dolores. Diam diam et eos lorem. Sit gubergren
+                        lorem
+                        magna sit ipsum dolores amet amet stet, kasd sea dolor rebum takimata takimata amet sanctus
+                        elitr at.
+                        Sanctus stet et sanctus sadipscing sadipscing dolores et sea, sit sed ea ipsum lorem stet, est.
+                    </p>
+
+
+                    <p>Kasd dolor nonumy ipsum et sit lorem lorem et takimata, labore sadipscing est kasd sed sadipscing
+                        labore
+                        sit. Et takimata at vero est aliquyam lorem. Ut magna elitr diam dolor et erat dolor. Dolor kasd
+                        sadipscing
+                        kasd stet amet consetetur, invidunt et ipsum ea lorem est. Justo diam amet duo amet rebum
+                        dolores, tempor ea
+                        lorem sanctus sit sed, dolores.</p>
+
+
+                    <p>Dolores gubergren lorem et lorem elitr tempor voluptua et nonumy. Eos sed accusam et est et
+                        takimata eos,
+                        erat est dolore eirmod ipsum dolor justo, stet et dolor eos sit clita. Labore eirmod at dolores
+                        sadipscing
+                        accusam magna rebum, voluptua.</p>
+
+                </div>
+
+                <div class="col-md-3 m-auto pb-3">
+                    <img src="img1/qwer.jpg" alt="Badhon" class="img-fluid rounded-circle border border-light">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="foter">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <h3 class="text-light pt-5 sav ">SERVICES</h3>
+                    <div class="menu">
+                        <ul>
+                            <li class="pb-2"><a href=""><i class="fas fa-angle-double-right"></i> Web Design</il></a>
+
+                            <li class="pb-2"><a href=""><i class="fas fa-angle-double-right"></i> Graphic Design</il>
+                                </a>
+
+                            <li class=""><a href=""><i class="fas fa-angle-double-right"></i> Digital Marketing</il></a>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-light pt-5 sav">WHO WE ARE</h3>
+                    <div class="menu">
+                        <ul>
+                            <li class="pb-2"><a href=""><i class="fas fa-angle-double-right"></i>
+                                    About Us</il></a>
+
+                            <li class="pb-2"><a href=""><i class="fas fa-angle-double-right"></i> Privecy policy
+                                    </il>
+                                </a>
+
+                            <li class=""><a href=""><i class="fas fa-angle-double-right"></i> Desclimer</il></a>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <h3 class="text-light pt-5 sav1 pb-3 ">SUPPORT</h3>
+                    <a href="" class="text-light sav1"><i class="fas fa-envelope-square">
+
+                        </i> badhonchakarboti@gmail.com</a>
+                    <div class="text-light sav1 mt-2">
+                        <i class="fas fa-business-time"></i> 09.00 am - 08.00 pm
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col text-center">
+                    <div class="circle">
+                        <a href="https://www.facebook.com/hulk.badhon/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="circle">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+
+                    <div class="circle text-danger">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+
+                    <div class="circle cloer2 ">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="circle text-primary">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col text-light mt-5 text-center pb-4">
+                    <h4>&copy;Thank you for coming my website</h4>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
