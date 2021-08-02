@@ -1,3 +1,3 @@
 function mynass(){
- alert("Hello")
+    alert("Hello")
 }
