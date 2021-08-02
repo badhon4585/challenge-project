@@ -1,3 +1,2 @@
-
-    alert("badhon")
-
+alert("Welcome my second page");
+   
