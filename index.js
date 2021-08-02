@@ -1,3 +1,3 @@
-function nass(){
-    alert("Thank you coming my second page");
+function showAlert(){
+    alert ("Hello world!");
 }
