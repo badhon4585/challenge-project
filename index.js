@@ -1,4 +1,4 @@
-alert("Welcome my  adout us page");
+
    
 document.querySelectorAll(".print")[0].addEventListener("click",function(){
     var text = this.innerHTML;
