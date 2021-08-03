@@ -148,6 +148,7 @@
         .cloer2 {
             color: rgb(89, 38, 185);
         }
+       
 
         @media screen and (max-width:500px) {
             .banner-colume {
@@ -266,6 +267,7 @@
                         </ul>
 
                     </div>
+                    <button  type="button" class="btn btn-primary btn-lg print">print my website</button>
                 </div>
                 <div class="col-md-4">
                     <h3 class="text-light pt-5 sav">WHO WE ARE</h3>
@@ -321,7 +323,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="row">
 
                 <div class="col text-light mt-5 text-center pb-4">
@@ -329,6 +331,7 @@
 
                 </div>
             </div>
+         
 
         </div>
 
@@ -336,6 +339,23 @@
    
 <script>
     alert("Welcome my  first  page")
+  
+    document.querySelectorAll(".print")[0].addEventListener("click",function(){
+       var text = this.innerHTML;
+       console.log(text)
+
+        pr(text);
+      
+    });
+  
+   
+
+    function pr(text){
+        switch(text){
+          case "print my website":
+              print()
+       }
+    }
 </script>
 </body>
 
