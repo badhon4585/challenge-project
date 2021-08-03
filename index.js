@@ -1,28 +1,20 @@
-alert("Welcome my second page");
+alert("Welcome my  adout us page");
    
-let ag = [
-    {
-        id:33,
-        mane:"badhon",
-        age:2.62
-    },
-    {
-        id:33,
-        mane:"bapon",
-        age:3.00
-    },
-    {
-        id:33,
-        mane:"ma",
-        age:4.62
+document.querySelectorAll(".print")[0].addEventListener("click",function(){
+    var text = this.innerHTML;
+    console.log(text)
+
+     pr(text);
+   
+ });
+
+
+
+ function pr(text){
+     switch(text){
+       case "print my website":
+           print()
     }
-];
+ }
 
-function mass(){
-  return ag.filter(function(x){
-      return x.age > 3
-   })
-   
-}
 
-console.log(mass());
