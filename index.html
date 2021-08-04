@@ -32,13 +32,7 @@
             background-color: #F5F5F5;
         }
 
-        .spiner-wit{
-            position: fixed;
-            width: 100%;
-            height:100vh ;
-            background: #20212B no-repeat;
-            z-index: 99999;
-        }
+
 
         .nabar-container {
             display: flex;
@@ -155,7 +149,7 @@
         .cloer2 {
             color: rgb(89, 38, 185);
         }
-       
+
 
         @media screen and (max-width:500px) {
             .banner-colume {
@@ -191,12 +185,7 @@
 </head>
 
 <body class="cloer">
-
-    <div class="spiner-wit">
-        <div class="spiner">
- 
-        </div>
-     </div>
+    
 
     <!-- this is  navbar section  -->
     <div class="section  ">
@@ -260,7 +249,7 @@
         </div>
 
     </section>
-   
+
     <!-- this is footer  section  -->
 
     <section class="foter">
@@ -282,7 +271,7 @@
                         </ul>
 
                     </div>
-                    <button  type="button" class="btn btn-primary btn-lg print">print my website</button>
+                    <button type="button" class="btn btn-primary btn-lg print">print my website</button>
                 </div>
                 <div class="col-md-4">
                     <h3 class="text-light pt-5 sav">WHO WE ARE</h3>
@@ -338,7 +327,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
 
                 <div class="col text-light mt-5 text-center pb-4">
@@ -346,46 +335,42 @@
 
                 </div>
             </div>
-       
+
 
         </div>
-      
+
 
     </section>
-   
-<script>
-   
-    
-  
-    document.querySelectorAll(".print")[0].addEventListener("click",function(){
-       var text = this.innerHTML;
-       console.log(text)
 
-        pr(text);
-      
-    });
-  
-   
+    <script>
 
-    function pr(text){
-        switch(text){
-          case "print my website":
-              print()
-       }
-    }
 
-   
-   let spinerMy = document.querySelector('.spiner-wit');
 
-   window.addEventListener('load',function(){
+        document.querySelectorAll(".print")[0].addEventListener("click", function () {
+            var text = this.innerHTML;
+            console.log(text)
 
-     spinerMy.parentElement.removeChild(spinerMy);
+            pr(text);
+
+        });
+
+
+
+        function pr(text) {
+            switch (text) {
+                case "print my website":
+                    print()
+            }
+        }
+
+
      
-   })
-    
-     
-     
-</script>
+
+       
+
+
+
+    </script>
 </body>
 
 
