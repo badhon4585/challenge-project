@@ -1,34 +1,36 @@
-const title = document.querySelector('#title');
-const author = document.querySelector('#author');
-const year = document.querySelector('#year');
-const btn = document.querySelector('.btnt');
-const bookList = document.querySelector('#book-list');
+const title = document.querySelector("#title");
+const author = document.querySelector("#author");
+const year = document.querySelector("#year");
+const btnt = document.querySelector(".btnt");
+const booklist = document.querySelector("#book-list");
 
-btn.addEventListener('click', function (e) {
+btnt.addEventListener('click', function(e){
     e.preventDefault();
 
-    // Basic Validation
-    if (title.value == '' && author.value == '' && year.value == '') {
+    if(title.value == '' && author.value =='' && year.value == '' ){
         alert('Please input your information.');
-    } else {
+
+    }else{
         const newRow = document.createElement('tr');
 
-        // Creating new title
-        const newTitle = document.createElement('th');
-        newTitle.innerHTML = title.value;
-        newRow.appendChild(newTitle);
 
-        // Creating new author
-        const newAuthor = document.createElement('th');
-        newAuthor.innerHTML = author.value;
-        newRow.appendChild(newAuthor);
+        const newtitle = document.createElement('th');
+        newtitle.innerHTML = title.value;
+        newRow.appendChild(newtitle);
 
-        // Creating new Year
-        const newYear = document.createElement('th');
-        newYear.innerHTML = year.value;
-        newRow.appendChild(newYear);
 
-        // Displaying in UI
-        bookList.appendChild(newRow);
+        
+        const newauthor = document.createElement('th');
+        newauthor.innerHTML = author.value;
+        newRow.appendChild( newauthor);
+
+
+
+        
+        const newyear = document.createElement('th');
+        newyear.innerHTML = year.value;
+        newRow.appendChild(newyear);
+
+        booklist.appendChild(newRow);
     }
-});
+})
