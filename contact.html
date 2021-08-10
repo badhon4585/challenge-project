@@ -63,8 +63,9 @@
         .button {
             font-size: 20px;
         }
+
         .top {
-            background: linear-gradient(to right,#232f63,#1c9e4e);
+            background: linear-gradient(to right, #232f63, #1c9e4e);
             margin-top: 10px;
             padding: 90px;
         }
@@ -122,8 +123,8 @@
 
     </div>
 
-     <!-- this is top section  -->
-     <section>
+    <!-- this is top section  -->
+    <section>
         <div class="top">
 
             <div class="elementor-shape elementor-shape-top">
@@ -135,7 +136,78 @@
             </div>
         </div>
     </section>
-    
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-book-open text-warning"></i> Badhon<span
+                class="text-warning"> Book</span>List</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" id="year" class="form-control" />
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-warning btn-block" />
+        </form>
+        <table class="table table-striped mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script>
+
+        const title = document.querySelector('#title');
+        const author = document.querySelector('#author');
+        const year = document.querySelector('#year');
+        const btn = document.querySelector('.btn');
+        const bookList = document.querySelector('#book-list');
+
+        btn.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            if (title.value == '' && author.value == '' && year.value == '') {
+                alert("d sjbcid cjdbucbdhicbdih");
+
+            } else {
+                const newRow = document.createElement('tr');
+
+              
+                const newTitle = document.createElement('th');
+                newTitle.innerHTML = title.value;
+                newRow.appendChild(newTitle);
+
+                
+                const newAuthor = document.createElement('th');
+                newAuthor.innerHTML = author.value;
+                newRow.appendChild(newAuthor);
+
+              
+                const newYear = document.createElement('th');
+                newYear.innerHTML = year.value;
+                newRow.appendChild(newYear);
+
+                
+                bookList.appendChild(newRow);
+            }
+        })
+
+    </script>
 </body>
 
 </html
