@@ -262,7 +262,7 @@
     </section>
 
     <div class="container mt-4">
-        <h1 class="display-4 text-center"><i class="fas fa-book-open text-warning"></i> JSBangladesh<span
+        <h1 class="display-4 text-center"><i class="fas fa-book-open text-warning"></i> Badhon<span
                 class="text-warning"> Book</span>List</h1>
         <form id="book-form">
             <div class="form-group">
@@ -383,7 +383,40 @@
     </section>
     <script>
 
+        const title = document.querySelector('#title');
+        const author = document.querySelector('#author');
+        const year = document.querySelector('#year');
+        const btn = document.querySelector('.btn');
+        const bookList = document.querySelector('#book-list');
 
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Basic Validation
+            if (title.value == '' && author.value == '' && year.value == '') {
+                alert('Please input your information.');
+            } else {
+                const newRow = document.createElement('tr');
+
+                // Creating new title
+                const newTitle = document.createElement('th');
+                newTitle.innerHTML = title.value;
+                newRow.appendChild(newTitle);
+
+                // Creating new author
+                const newAuthor = document.createElement('th');
+                newAuthor.innerHTML = author.value;
+                newRow.appendChild(newAuthor);
+
+                // Creating new Year
+                const newYear = document.createElement('th');
+                newYear.innerHTML = year.value;
+                newRow.appendChild(newYear);
+
+                // Displaying in UI
+                bookList.appendChild(newRow);
+            }
+        });
 
     </script>
 </body>
