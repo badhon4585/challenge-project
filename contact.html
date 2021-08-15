@@ -74,11 +74,20 @@
             font-size: 70px;
             font-weight: bolder;
         }
-        .like{
+
+        .like {
             font-size: 30px;
 
         }
-        
+        .like-btn{
+           background-color: rgba(205, 205, 226, 0.726);
+        }
+        .containe{
+            margin-left: 100px;
+        }
+        .containe :hover{
+            background-color: rgb(83, 168, 194);
+        }
     </style>
 
 </head>
@@ -175,11 +184,13 @@
     </div>
 
     <section>
-         <button class="like-btn">
-             <span id="icon"><i class="far fa-thumbs-up"></i></span>
-             <span id="cont"></span>Like
-             
-         </button>
+        <div class="containe">
+            <button class="like-btn">
+                <span id="icon"><i class="far fa-thumbs-up"></i></span>
+                <span id="cont"></span>
+
+            </button>
+        </div>
     </section>
 
     <script src="contact.js"></script>
